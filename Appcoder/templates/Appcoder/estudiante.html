@@ -1,0 +1,16 @@
+{% extends "Appcoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<p>Web de estudiantes</p>
+{% endblock %}
+
+{% block contenido %}               
+
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'estudiante_formulario' %}">Carga de Estudiantes</a>
+    </div>
+
+{% endblock %}

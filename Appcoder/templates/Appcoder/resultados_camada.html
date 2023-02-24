@@ -1,0 +1,29 @@
+{% extends "Appcoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<p>Resultados de busqueda por camada</p>
+
+{% endblock %}
+
+{% block contenido %}               
+
+<form action=""    method="GET">
+    
+    <h3> Los resultados de la busqueda de la camada numero {{camada}} son:</h3>
+    <br>
+    <table>
+  
+    {% for curso in cursos %}
+
+        <p>{{curso.nombre}} de la camada = {{curso.camada}}</p>
+
+    {% endfor %}
+
+    </table>
+
+ </form>
+
+{% endblock %}

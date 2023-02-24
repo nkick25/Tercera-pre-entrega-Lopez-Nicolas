@@ -1,0 +1,16 @@
+{% extends "Appcoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+<p>Web de entregables</p>
+{% endblock %}
+
+{% block contenido %}               
+
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'entregable_formulario' %}">Carga de Entregables</a>
+    </div>
+
+{% endblock %}
